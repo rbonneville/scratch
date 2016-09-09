@@ -7,4 +7,5 @@ install.packages("EnsDb.Hsapiens.v75")
 install.packages("GO.db")
 install_github("mathelab/ALTRE",ref="webgraphs")
 library("ALTRE")
-runShinyApp()
+# don't permamently replace the user's devtools
+install.packages("devtools")
