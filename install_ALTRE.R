@@ -14,7 +14,7 @@ if (length(grep("darwin", R.Version()$os)) > 0 && (r.major.version <= 2 || (r.ma
 	source("https://bioconductor.org/biocLite.R")
 }
 biocLite(c("org.Hs.eg.db","EnsDb.Hsapiens.v75","GO.db"))
-devtools::install_github("mathelab/ALTRE",ref="webgraphs")
+devtools::install_github("mathelab/ALTRE",ref="webgraphs",dependencies=TRUE)
 if (.Platform$OS.type == "windows")
 {
 	# don't permamently replace the user's devtools
